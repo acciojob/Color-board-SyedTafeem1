@@ -26,7 +26,7 @@
 
                 setTimeout(()=>{
                     box.style.backgroundColor="#1d1d1d"
-                },500)
+                },1000)
             })
 
         }

@@ -1,4 +1,30 @@
 /*  your css code here. If applicable */
-*{
-	box-sizing: border-box;
-}
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .container{
+            width: 100vw;
+            height: 80vh;
+            background-color: #111111;
+            display: grid;
+            grid-template-columns: repeat(40,1fr);
+            grid-template-rows: repeat(20,1fr);
+            gap: 4px;
+        }
+
+        .box{
+            background-color: rgb(50, 48, 48);
+            border-radius: 20%;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }

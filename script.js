@@ -4,7 +4,7 @@
 
         for(let i = 0; i < 800; i++){
             const div = document.createElement("div")
-            div.classList.add("box")
+            div.classList.add("square")
 
             div.addEventListener("mouseenter",(e)=>{
                 const red = Math.floor(Math.random()*256)
@@ -20,9 +20,8 @@
                 setTimeout(()=>{
                     e.target.style.backgroundColor = "rgb(50, 48, 48)" 
                     e.target.style.boxShadow="none"
-                },500)
+                },1000)
             })
             fragment.appendChild(div)
         }
-
         container.append(fragment)
